@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 4000;
 
 
 app.get("/",(req,res)=>{
-    res.send("Hello from server")
+    res.sendFile(__dirname+"/index.html")
 })
 
 app.get("/users",(req,res)=>{
